@@ -1,0 +1,43 @@
+@media (max-width: 768px) {
+  header,
+  footer {
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .blog-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  article {
+    font-size: 16px;
+  }
+}
+
+#toggleBtn {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* 非手機尺寸時隱藏按鈕 */
+@media (min-width: 769px) {
+  #toggleBtn {
+    display: none;
+  }
+}

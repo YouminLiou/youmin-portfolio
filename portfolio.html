@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youmin作品集</title>
+    <link rel="stylesheet" href="blogStyle.css" />
+    <link rel="stylesheet" href="carousel.css" />
+
+    <!-- 
+  這段是響應式設計的樣式載入設定：
+  僅當裝置是「螢幕 screen」且「最大寬度為 768 像素」時，
+  才會載入 mobile.css。常見於手機、平板直向顯示。
+-->
+    <link
+      rel="stylesheet"
+      href="mobile.css"
+      media="screen and (max-width: 768px)"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Youmin 作品集</h1>
+      <nav>
+        <a href="blogIndex.html">首頁</a> |
+        <a href="portfolio.html">Youmin 作品集</a> |
+        <a href="contact.html">聯絡我</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="carousel-wrapper">
+        <div class="carousel" id="carousel">
+          <a href="https://your-link1.com" target="_blank"
+            ><img src="https://picsum.photos/id/1015/200/300" alt="作品1"
+          /></a>
+          <a href="https://your-link2.com" target="_blank"
+            ><img src="https://picsum.photos/id/1016/200/300" alt="作品2"
+          /></a>
+          ...
+          <a href="https://your-link3.com" target="_blank"
+            ><img src="https://picsum.photos/id/1018/200/300" alt="作品3"
+          /></a>
+          <a href="https://your-link4.com" target="_blank"
+            ><img src="https://picsum.photos/id/1020/200/300" alt="作品4"
+          /></a>
+          <a href="https://your-link5.com" target="_blank"
+            ><img src="https://picsum.photos/id/1024/200/300" alt="作品5"
+          /></a>
+          <a href="https://your-link6.com" target="_blank"
+            ><img src="https://picsum.photos/id/1030/200/300" alt="作品6"
+          /></a>
+          <a href="https://your-link7.com" target="_blank"
+            ><img src="https://picsum.photos/id/1035/200/300" alt="作品7"
+          /></a>
+          <a href="https://your-link8.com" target="_blank"
+            ><img src="https://picsum.photos/id/1040/200/300" alt="作品8"
+          /></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Youmin作品集. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

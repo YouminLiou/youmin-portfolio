@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youmin 開發日誌</title>
+    <link rel="stylesheet" href="blogStyle.css" />
+    <!-- 
+  這段是響應式設計的樣式載入設定：
+  僅當裝置是「螢幕 screen」且「最大寬度為 768 像素」時，
+  才會載入 mobile.css。常見於手機、平板直向顯示。
+-->
+    <link
+      rel="stylesheet"
+      href="mobile.css"
+      media="screen and (max-width: 768px)"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Youmin Blog</h1>
+      <nav>
+        <a href="blogIndex.html">首頁</a> |
+        <a href="portfolio.html">Youmin 作品集</a> |
+        <a href="contact.html">聯絡我</a>
+      </nav>
+    </header>
+
+    <main class="blog-layout">
+      <button id="toggleBtn">顯示 / 隱藏分類</button>
+
+      <aside class="sidebar" id="sidebar">
+        <h3>分類</h3>
+        <ul>
+          <li><a href="#">前端開發</a></li>
+          <li><a href="#">學習筆記</a></li>
+          <li><a href="#">生活分享</a></li>
+        </ul>
+      </aside>
+
+      <section class="content">
+        <article>
+          <h2>歡迎來到Youmin Blog</h2>
+          <p>這裡是我學習與成長的紀錄空間...</p>
+        </article>
+        <article>
+          <h2>【作品展示】Todo List 小專案</h2>
+          <p>這是我用 JavaScript 完成的小作品...</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Youmin Blog. All rights reserved.</p>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>

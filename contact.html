@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>聯絡我</title>
+    <link rel="stylesheet" href="blogStyle.css" />
+    <link
+      rel="stylesheet"
+      href="mobile.css"
+      media="screen and (max-width: 768px)"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Youmin 聯絡我</h1>
+      <nav>
+        <a href="blogIndex.html">首頁</a> |
+        <a href="portfolio.html">Youmin 作品集</a> |
+        <a href="contact.html">聯絡我</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- 🔶 聯絡表單區 -->
+      <section class="content">
+        <h2>聯絡我</h2>
+        <form id="contactForm">
+          <p>
+            <input type="text" id="name" placeholder="你的名字" />
+            <span class="error" id="nameError"></span>
+          </p>
+          <p>
+            <input type="email" id="email" placeholder="你的 Email" />
+            <span class="error" id="emailError"></span>
+          </p>
+          <p>
+            <textarea
+              id="message"
+              placeholder="請輸入你的留言..."
+              rows="4"
+            ></textarea>
+          </p>
+          <p><button type="submit">送出留言</button></p>
+        </form>
+      </section>
+
+      <!-- 🔶 公開留言論壇區 -->
+      <section class="content">
+        <h2>公開留言區</h2>
+        <div id="forumMessages">
+          <!-- 這裡會用 JavaScript 顯示留言 -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Youmin Site. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
